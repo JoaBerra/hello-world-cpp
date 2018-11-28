@@ -9,3 +9,6 @@ hello.o: hello.cpp functions.h
 
 hello: main.o factorial.o hello.o
 	$(CC) main.o factorial.o hello.o -o hello
+
+clean:
+	- rm *.o hello
